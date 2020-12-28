@@ -18,9 +18,11 @@
 
     --fc-separator: #424242;
 
-    --btn-accent: #2487c0;
+    --sm-primary: #c4c4c4;
+    --sm-accent: #e9e9e9;
 
-    --nav-primary: #E9E9E9;
+    --nav-primary: #c4c4c4;
+    --nav-accent: #e9e9e9;
     --nav-background: #141414;
 
     --ff-default: "Roboto", sans-serif;
@@ -117,11 +119,11 @@ nav {
 }
 
 .nav-element:hover .nav-icon-color {
-    fill: var(--btn-accent);
+    fill: var(--nav-accent);
 }
 
 .nav-element:hover .nav-text {
-    color: var(--btn-accent);
+    color: var(--nav-accent);
     text-decoration: none;
 }
 
@@ -371,12 +373,12 @@ nav {
 }
 
 .social-icon-color {
-    fill: var(--nav-primary);
+    fill: var(--sm-primary);
     transition: 0.3s;
 }
 
 .social-icon:hover .social-icon-color {
-    fill: #2487c0;
+    fill: var(--sm-accent);
 }
 
 /* ------------------------misc------------------------ */
