@@ -111,7 +111,8 @@ nav {
 .nav-text {
     font-size: 0.7rem;
     font-weight: 300;
-    color:var(--nav-primary); 
+    color:var(--nav-primary);
+    text-decoration: 0;
     transition: 0.3s;
 }
 
