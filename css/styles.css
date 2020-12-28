@@ -112,7 +112,7 @@ nav {
     font-size: 0.7rem;
     font-weight: 300;
     color:var(--nav-primary);
-    text-decoration: 0;
+    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -270,7 +270,7 @@ nav {
 #slash-collection {
     border: 1px solid var(--tc-primary);
     color: var(--tc-primary);
-    text-decoration: 0;
+    text-decoration: none;
     padding: 5px 11px;
     border-radius: 0.7rem;
     font-size: 0.9rem;
