@@ -96,7 +96,7 @@ nav {
     min-width: 50px;
     overflow: hidden;
     white-space: nowrap;
-    text-decoration: 0;
+    text-decoration: none;
 }
 
 .nav-icon {
@@ -122,6 +122,7 @@ nav {
 
 .nav-element:hover .nav-text {
     color: var(--btn-accent);
+    text-decoration: none;
 }
 
 /* ------------------------intro section------------------------ */
@@ -394,7 +395,7 @@ nav {
 }
 
 .misc-link {
-    text-decoration: 0;
+    text-decoration: none;
     color: var(--tc-secondary);
     font-weight: 300;
     font-size: 0.8rem;
