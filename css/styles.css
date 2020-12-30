@@ -130,6 +130,13 @@ nav {
 
 /* ------------------------intro section------------------------ */
 
+#intro-section {
+    display: grid;
+    grid-template-rows: 0.4fr 1.5fr 1fr;
+    margin-bottom: 0.8rem;
+    overflow: auto;
+}
+
 #intro-header {
     text-align: center;
 }
@@ -153,12 +160,6 @@ nav {
     width: auto;
     margin-left: auto;
     margin-right: auto;
-}
-
-#intro-section {
-    display: grid;
-    grid-template-rows: 0.4fr 1.5fr 1fr;
-    overflow: auto;
 }
 
 #quote {
@@ -248,7 +249,7 @@ nav {
 
 #materials-text {
     color: var(--tc-secondary);
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 /* ------------------------collection------------------------ */
@@ -288,7 +289,7 @@ nav {
     width: 90vw;
     height: 50.625vw;
     margin-top: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 /* ------------------------footer------------------------ */
