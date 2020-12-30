@@ -128,6 +128,11 @@ nav {
     text-decoration: none;
 }
 
+.nav-element:active, .nav-element:focus {
+    outline: none;
+    border: none;
+}
+
 /* ------------------------intro section------------------------ */
 
 #intro-section {
