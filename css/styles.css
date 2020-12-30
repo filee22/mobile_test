@@ -129,8 +129,7 @@ nav {
 }
 
 .nav-element:active, .nav-element:focus {
-    outline: none;
-    border: none;
+    outline: 0;
 }
 
 /* ------------------------intro section------------------------ */
