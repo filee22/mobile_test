@@ -55,17 +55,6 @@ p {
 }
 
 
-/* ------------------------logo------------------------ */
-
-#logo {
-    display: block;
-    height: 50px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0.7rem;
-}
-
 /* ------------------------navigation------------------------ */
 
 #nav_container {
@@ -132,6 +121,17 @@ nav {
 .nav-element:active, .nav-element:focus {
     outline: 0;
     -moz-outline-style: none;
+}
+
+/* ------------------------logo------------------------ */
+
+#logo {
+    display: block;
+    height: 50px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.7rem;
 }
 
 /* ------------------------intro section------------------------ */
