@@ -130,6 +130,7 @@ nav {
 
 .nav-element:active, .nav-element:focus {
     outline: 0;
+    -moz-outline-style: none;
 }
 
 /* ------------------------intro section------------------------ */
