@@ -37,7 +37,7 @@ html {
 }
 
 body {
-    margin: 0 0 55px 0;
+    margin: 0 0 53px 0;
 }
 
 main {
@@ -63,7 +63,7 @@ p {
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0.5rem;
+    padding-top: 0.7rem;
 }
 
 /* navigation */
@@ -73,6 +73,7 @@ p {
     bottom: 0;
     width: 100%;
     height: 55px;
+    margin-bottom: -1px;
 }
 
 nav {
@@ -157,6 +158,7 @@ nav {
 #intro-section {
     display: grid;
     grid-template-rows: 0.4fr 1.5fr 1fr;
+    overflow: auto;
 }
 
 #quote {
@@ -190,6 +192,7 @@ nav {
     background: var(--bc-hw-gradient);
     margin-left: -5.5%;
     margin-right: -5.5%;
+    overflow: auto;
 }
 
 #hardware-bg-container {
@@ -221,6 +224,7 @@ nav {
 
 #materials-section {
     display: grid;
+    overflow: auto;
 }
 
 #materials-title {
@@ -258,6 +262,7 @@ nav {
     background: var(--bc-cl-gradient);
     margin-left: -5.5%;
     margin-right: -5.5%;
+    overflow: auto;
 }
 
 #collection-bg-container {
@@ -293,10 +298,10 @@ nav {
     margin-left: -5.5%;
     margin-right: -5.5%;
     margin-top: 2rem;
+    overflow: hidden;
 }
 
 #footer-bg-container {
-    display: grid;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -304,7 +309,6 @@ nav {
 /* ------------------------email------------------------ */
 
 #contact {
-    display: grid;
     margin-top: 1rem;
 }
 
@@ -313,6 +317,7 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 1rem;
+    margin-bottom: 1.8rem;
 }
 
 #email-form {
@@ -387,6 +392,7 @@ nav {
     font-size: 0.8rem;
     color: var(--tc-secondary);
     font-weight: 300;
+    margin-top: 1.3rem;
 }
 
 #misc-ul {
@@ -407,4 +413,12 @@ nav {
 
 .misc-link:last-child {
     border: 0;
+}
+
+/* ------------------------media------------------------ */
+
+@media screen and (max-width: 373px){
+    #email-box {
+        max-width: 10.3rem;
+    }
 }
