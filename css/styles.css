@@ -58,7 +58,7 @@ a:focus, a:active {
     outline: 0;
 }
 
-button:focus, button:active {
+button::-moz-focus-inner {
     outline: 0;
 }
 
