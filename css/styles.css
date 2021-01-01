@@ -118,9 +118,8 @@ nav {
     text-decoration: none;
 }
 
-.nav-element:active, .nav-element:focus {
-    outline: 0;
-    -moz-outline-style: none;
+.nav-element:focus, .nav-element:active {
+    background-color: transparent;
 }
 
 /* ------------------------logo------------------------ */
