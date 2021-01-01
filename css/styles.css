@@ -59,7 +59,7 @@ a:focus, a:active {
 }
 
 button::-moz-focus-inner {
-    outline: 0;
+    border: 0;
 }
 
 /* ------------------------navigation------------------------ */
