@@ -58,6 +58,10 @@ a:focus, a:active {
     outline: 0;
 }
 
+button:focus, button:active {
+    outline: 0;
+}
+
 /* ------------------------navigation------------------------ */
 
 #nav_container {
