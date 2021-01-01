@@ -54,6 +54,9 @@ p {
     line-height: 130%;
 }
 
+a:focus, a:active {
+    outline: 0;
+}
 
 /* ------------------------navigation------------------------ */
 
@@ -116,10 +119,6 @@ nav {
 .nav-element:hover .nav-text {
     color: var(--nav-accent);
     text-decoration: none;
-}
-
-.nav-element:focus, .nav-element:active {
-    background-color: transparent;
 }
 
 /* ------------------------logo------------------------ */
