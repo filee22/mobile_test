@@ -179,8 +179,7 @@ nav {
 }
 
 #sig-container {
-    display: flex;
-    align-items: flex-end;
+    display: grid;
 }
 
 #slash-signature {
