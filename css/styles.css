@@ -442,6 +442,7 @@ Device: tablet /min-width: 768px/
     /* intro */
     #intro-section {
         overflow: visible;
+        margin-bottom: 2rem;
     }
     
     #title-img {
