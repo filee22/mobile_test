@@ -71,6 +71,7 @@ button::-moz-focus-inner {
     width: 100%;
     height: 55px;
     margin-bottom: -1px;
+    z-index: 500;
 }
 
 nav {
@@ -201,7 +202,7 @@ nav {
     background: var(--bc-hw-gradient);
     margin-left: -5.5%;
     margin-right: -5.5%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #hardware-bg-container {
@@ -220,7 +221,7 @@ nav {
 
 #hw-img {
     height: 23rem;
-    margin-right: -5%;
+    margin-right: -6%;
     margin-left: auto;
     margin-top: 0.5rem;
     margin-bottom: 2.2rem;
@@ -433,14 +434,41 @@ nav {
 }
 
 /*
-tablet
+Device: tablet /min-width: 768px/
 */
 
 @media screen and (min-width: 768px){
+
+    /* intro */
+    #intro-section {
+        overflow: visible;
+    }
+    
     #title-img {
         transform: rotate(90deg);
         height: 40rem;
         margin-top: -10rem;
         margin-bottom: -10rem;
+    }
+    
+    /* materials */
+    #materials-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    #materials-title-container {
+        grid-column: 2/3;
+        margin-left: 1rem;
+    }
+
+    #materials-img {
+        grid-row: 1/3;
+        margin-top: 3rem;
+    }
+
+    #materials-text {
+        margin: 0 2rem auto 1rem;
     }
 }
