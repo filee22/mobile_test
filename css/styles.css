@@ -140,7 +140,7 @@ nav {
 
 #intro-section {
     display: grid;
-    grid-template-rows: 0.4fr 1.5fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 0.9fr;
     margin-bottom: 0.8rem;
     overflow: auto;
 }
