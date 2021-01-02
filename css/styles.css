@@ -140,7 +140,7 @@ nav {
 
 #intro-section {
     display: grid;
-    grid-template-rows: 0.4fr 1.5fr 0.9fr;
+    grid-template-rows: 0.4fr 1.5fr 0.5fr 0.4fr;
     margin-bottom: 0.8rem;
     overflow: auto;
 }
@@ -175,7 +175,7 @@ nav {
     font-style: italic;
     font-weight: 200;
     font-size: 1.1rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 #sig-container {
