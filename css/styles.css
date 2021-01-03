@@ -473,3 +473,68 @@ Device: tablet /min-width: 768px/
         margin: 0 2rem auto 1rem;
     }
 }
+
+/*
+Device: tablet /min-width: 1228px/
+*/
+
+@media screen and (min-width: 1228px){
+
+    /* intro */
+    #intro-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.5fr;
+    }
+
+    #intro-header {
+        grid-column: 1/3;
+    }
+    
+    #title-img {
+        height: 50rem;
+        margin-top: -13rem;
+        margin-bottom: -14rem;
+        grid-column: 1/3;
+    }
+
+    #quote {
+        margin-top: 0.9rem;
+    }
+
+    /* hardware */
+    #hardware-section {
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 1rem;
+    }
+
+    #hardware-bg-container {
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 0.2fr 1fr;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #hardware-title {
+        font-size: 3rem;
+    }
+
+    #hw-img {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        overflow: visible;
+        margin-top: 2rem;
+    }
+    
+    #hardware-text {
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+
+    /* materials */
+    #materials-section {
+        padding-bottom: 1.5rem;
+    }
+}
