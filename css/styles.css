@@ -426,7 +426,7 @@ nav {
     font-weight: 300;
     font-size: 0.8rem;
     border-right: solid var(--fc-separator) 1px;
-    padding: 0 12px 0 12px;
+    padding: 0 14px 0 10px;
 }
 
 .misc-link:last-child {
