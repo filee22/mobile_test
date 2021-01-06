@@ -467,8 +467,8 @@ Device: tablet / min-width: 768px/
     #intro-text {
         text-align: center;
         font-size: 1.3rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
     #quote {
@@ -543,7 +543,6 @@ Device: tablet / min-width: 1085px/
     }
 
     #quote {
-        font-size: 1.5rem;
         margin-top: 0;
     }
 
@@ -595,7 +594,7 @@ Device: tablet / min-width: 1085px/
     }
 
     #materials-text {
-        padding-right: 1.5rem;
+        padding-right: 3rem;
     }
 
     #materials-img {
