@@ -23,6 +23,7 @@
     --nav-primary: #c4c4c4;
     --nav-accent: #e9e9e9;
     --nav-background: #141414;
+    --nav-background-desktop: #1f1f1f;
 
     --ff-default: "Roboto", sans-serif;
 }
@@ -63,7 +64,7 @@ button::-moz-focus-inner {
 
 /*------------------------navigation------------------------*/
 
-#nav_container {
+#nav-container {
     background: var(--nav-background);
     position: fixed;
     bottom: 0;
@@ -154,7 +155,7 @@ nav {
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--hc-secondary);
+    /* color: var(--hc-secondary); */
 }
 
 #intro-subtitle {
@@ -162,6 +163,7 @@ nav {
     font-size: 2.2rem;
     margin-top: 0;
     margin-bottom: 0;
+    color: var(--hc-secondary)
 }
 
 #title-img {
@@ -198,7 +200,7 @@ nav {
     text-align: left;
 }
 
-#hardware-section {
+#hardware-bg {
     background: var(--bc-hw-gradient);
     margin-left: -5.5%;
     margin-right: -5.5%;
@@ -216,7 +218,7 @@ nav {
 }
 
 #hardware-text {
-    color:var(--tc-secondary);
+    color: var(--tc-secondary);
 }
 
 #hw-img {
@@ -465,10 +467,13 @@ Device: tablet / min-width: 768px/
     }
 
     #intro-text {
-        text-align: center;
         font-size: 1.3rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        text-align: center;
+    }
+
+    #intro-text-container {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #quote {
@@ -522,11 +527,56 @@ Device: tablet / min-width: 1085px/
 
 @media screen and (min-width: 1085px){
 
+    body {
+        margin: 0;
+    }
+
     p {
         font-size: 1.1rem;
     }
 
+    /* navigation */
+    #logo {
+        position: fixed;
+        margin-top: -0.15rem;
+        padding-left: 5%;
+        height: 2rem;
+        z-index: 500;
+    }
+
+    #nav-container {
+        top: 0;
+        opacity: 90%;
+        background: var(--nav-background-desktop);
+        border-bottom: 1px solid #424242;
+    }
+
+    .navbar-nav {
+        justify-content: flex-end;
+        padding-top: 15px;
+        padding-right: 10%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .nav-element {
+        margin-left: 1.5rem;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-text {
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
     /* intro */
+    #intro-section {
+        padding-top: 53px;
+    }
+
     #intro-title {
         font-size: 1.6rem;
     }
@@ -537,9 +587,14 @@ Device: tablet / min-width: 1085px/
     }
 
     #title-img {
-        height: 50rem;
+        height: 55rem;
         margin-top: -13rem;
         margin-bottom: -14rem;
+    }
+
+    #intro-text-container {
+        max-width: 50rem;
+        font-size: 4rem;
     }
 
     #quote {
@@ -548,6 +603,11 @@ Device: tablet / min-width: 1085px/
 
     /* hardware */
     #hardware-section {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+
+    #hardware-bg {
         margin-left: 0;
         margin-right: 0;
         border-radius: 1rem;
@@ -570,9 +630,10 @@ Device: tablet / min-width: 1085px/
         grid-column: 2/3;
         overflow: visible;
         margin-top: 2rem;
+        height: 34vw;
     }
     
-    #hardware-text {
+    #hardware-text-container {
         grid-row: 2;
         grid-column: 1/2;
     }
@@ -585,6 +646,10 @@ Device: tablet / min-width: 1085px/
         grid-template-columns: 1fr 1.2fr;
     }
 
+    #materials-title-container {
+        max-width: 30rem;
+    }
+
     #materials-title {
         font-size: 3rem;
     }
@@ -593,8 +658,8 @@ Device: tablet / min-width: 1085px/
         font-size: 3rem;
     }
 
-    #materials-text {
-        padding-right: 3rem;
+    #materials-text-container {
+        max-width: 24rem;
     }
 
     #materials-img {
@@ -657,6 +722,8 @@ Device: tablet / min-width: 1085px/
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
         padding-top: 0.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     #social-media {
