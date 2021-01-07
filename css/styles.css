@@ -24,6 +24,7 @@
     --nav-accent: #e9e9e9;
     --nav-background: #141414;
     --nav-background-desktop: #1f1f1f;
+    --nav-border: #424242;
 
     --ff-default: "Roboto", sans-serif;
 }
@@ -548,7 +549,7 @@ Device: tablet / min-width: 1085px/
         top: 0;
         opacity: 90%;
         background: var(--nav-background-desktop);
-        border-bottom: 1px solid #424242;
+        border-bottom: 1px solid var(--nav-border);
     }
 
     .navbar-nav {
