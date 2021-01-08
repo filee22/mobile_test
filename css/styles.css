@@ -145,7 +145,7 @@ nav {
 
 #intro-section {
     display: grid;
-    grid-template-rows: 0.4fr 1.5fr 0.5fr 0.4fr;
+    grid-template-rows: 0.4fr 1.5fr 0.4fr 0.4fr;
     margin-bottom: 0.8rem;
     overflow: auto;
 }
@@ -633,10 +633,6 @@ desktop
     #intro-text-container {
         max-width: 50rem;
         font-size: 4rem;
-    }
-
-    #quote {
-        margin-top: 0;
     }
 
     /*------------------------hardware------------------------*/
