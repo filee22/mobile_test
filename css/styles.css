@@ -653,7 +653,7 @@ desktop
         margin-left: 3%;
         margin-right: 3%;
         padding-top: 0.5rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 
     #hardware-title {
@@ -685,6 +685,7 @@ desktop
 
     #materials-title-container {
         max-width: 30rem;
+        margin-left: 2rem;
     }
 
     #materials-title {
@@ -697,10 +698,12 @@ desktop
 
     #materials-text-container {
         max-width: 24rem;
+        margin-left: 2rem;
     }
 
     #materials-img {
         margin-top: 0;
+        margin-right: 2rem;
         padding-top: 2rem;
     }
 
