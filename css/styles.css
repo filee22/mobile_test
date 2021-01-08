@@ -602,7 +602,7 @@ desktop
     .nav-text {
         font-size: 0.7rem;
         font-weight: 500;
-        transition: 0.3s, padding-bottom 0s;
+        transition: 0.3s, border-bottom 0s, padding-bottom 0s;
     }
     
     .nav-element:hover .nav-text {
