@@ -1,10 +1,11 @@
 :root {
     --tc-primary: #ffffff;
     --tc-secondary: #E9E9E9;
+    --tc-dark: #d3d3d3;
     --tc-accent: #FF8800;
 
     --hc-primary: #ffffff;
-    --hc-secondary: #AAAAAA;
+    --hc-secondary: #c9c9c9;
     --hc-highlight: #FF8800;
     
     --bc-primary: #000000;
@@ -53,6 +54,7 @@ footer {
 
 p {
     line-height: 130%;
+    font-weight: 500;
 }
 
 a:focus, a:active {
@@ -113,7 +115,7 @@ nav {
 .nav-text {
     font-size: 0.55rem;
     font-weight: 300;
-    color:var(--nav-primary);
+    color: var(--nav-primary);
     text-decoration: none;
     transition: 0.3s;
     padding-top: 0.2rem;
@@ -156,7 +158,6 @@ nav {
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    /* color: var(--hc-secondary); */
 }
 
 #intro-subtitle {
@@ -174,11 +175,19 @@ nav {
     margin-right: auto;
 }
 
-#quote {
-    text-align: right;
-    font-style: italic;
-    font-weight: 200;
+#intro-text {
     font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--tc-dark);
+    text-align: center;
+}
+
+#quote {
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--tc-secondary);
     margin-top: 0.5rem;
 }
 
@@ -188,8 +197,8 @@ nav {
 
 #slash-signature {
     width: 6rem;
-    margin-left: auto;
-    margin-right: 0;
+    margin-left: 52%;
+    margin-right: auto;
 }
 
 /*------------------------hardware------------------------*/
@@ -240,6 +249,10 @@ nav {
     overflow: auto;
 }
 
+#materials-title-container {
+    padding-bottom: 0.5rem;
+}
+
 #materials-title {
     color: var(--hc-secondary);
     font-size: 2.1rem;
@@ -266,8 +279,14 @@ nav {
 
 /*------------------------collection------------------------*/
 
+#collection-title-container {
+    margin-top: 1.1rem;
+    margin-bottom: 0;
+}
+
 #collection-title {
     font-size: 2rem;
+    margin-top: 0;
     margin-bottom: 0.2rem;
     color: var(--hc-highlight);
 }
@@ -293,6 +312,7 @@ nav {
 
 #collection-text {
     margin-bottom: 1.5rem;
+    color: var(--tc-secondary);
 }
 
 #slash-collection {
@@ -302,6 +322,7 @@ nav {
     padding: 5px 11px;
     border-radius: 0.7rem;
     font-size: 0.9rem;
+    font-weight: 500;
 }
 
 #video {
@@ -436,8 +457,15 @@ nav {
     border: 0;
 }
 
+
 /*------------------------media------------------------*/
 
+
+/*---------------------------------
+Device:
+mobile
+/min-width: 373px/
+---------------------------------*/
 @media screen and (max-width: 373px){
     #email-box {
         max-width: 10.3rem;
@@ -445,7 +473,9 @@ nav {
 }
 
 /*---------------------------------
-Device: tablet / min-width: 768px/
+Device:
+tablet(vertical)
+/min-width: 768px/
 ---------------------------------*/
 
 @media screen and (min-width: 768px){
@@ -454,7 +484,7 @@ Device: tablet / min-width: 768px/
         font-size: 1.1rem;
     }
 
-    /* intro */
+    /*------------------------intro------------------------*/
     #intro-section {
         overflow: visible;
         margin-bottom: 2.5rem;
@@ -484,12 +514,10 @@ Device: tablet / min-width: 768px/
     }
 
     #slash-signature {
-        margin-left: 52%;
-        margin-right: auto;
         width: 7rem;
     }
     
-    /* materials */
+    /*------------------------materials------------------------*/
     #materials-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -523,7 +551,10 @@ Device: tablet / min-width: 768px/
 }
 
 /*---------------------------------
-Device: tablet / min-width: 1085px/
+Device:
+tablet(horizontal)
+desktop
+/min-width: 1085px/
 ---------------------------------*/
 
 @media screen and (min-width: 1085px){
@@ -536,7 +567,7 @@ Device: tablet / min-width: 1085px/
         font-size: 1.1rem;
     }
 
-    /* navigation */
+    /*------------------------navigation------------------------*/
     #logo {
         position: fixed;
         margin-top: -0.15rem;
@@ -571,9 +602,15 @@ Device: tablet / min-width: 1085px/
     .nav-text {
         font-size: 0.7rem;
         font-weight: 500;
+        transition: 0.3s, padding-bottom 0s;
+    }
+    
+    .nav-element:hover .nav-text {
+        border-bottom: 2px solid var(--hc-highlight);
+        padding-bottom: 1rem;
     }
 
-    /* intro */
+    /*------------------------intro------------------------*/
     #intro-section {
         padding-top: 53px;
     }
@@ -602,10 +639,10 @@ Device: tablet / min-width: 1085px/
         margin-top: 0;
     }
 
-    /* hardware */
+    /*------------------------hardware------------------------*/
     #hardware-section {
-        padding-top: 100px;
-        margin-top: -100px;
+        padding-top: 80px;
+        margin-top: -80px;
     }
 
     #hardware-bg {
@@ -616,6 +653,7 @@ Device: tablet / min-width: 1085px/
 
     #hardware-bg-container {
         grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 0.4fr 1fr;
         margin-left: 3%;
         margin-right: 3%;
         padding-top: 0.5rem;
@@ -624,6 +662,7 @@ Device: tablet / min-width: 1085px/
 
     #hardware-title {
         font-size: 3rem;
+        padding-bottom: 0.5rem;
     }
 
     #hw-img {
@@ -637,12 +676,13 @@ Device: tablet / min-width: 1085px/
     #hardware-text-container {
         grid-row: 2;
         grid-column: 1/2;
+        max-width: 26rem;
     }
 
-    /* materials */
+    /*------------------------materials------------------------*/
     #materials-section {
-        padding-top: 3rem;
-        padding-bottom: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
         grid-template-rows: 1fr 1.2fr;
         grid-template-columns: 1fr 1.2fr;
     }
@@ -665,9 +705,10 @@ Device: tablet / min-width: 1085px/
 
     #materials-img {
         margin-top: 0;
+        padding-top: 2rem;
     }
 
-    /* collection */
+    /*------------------------collection------------------------*/
     #collection-section {
         margin-left: 0;
         margin-right: 0;
@@ -675,18 +716,17 @@ Device: tablet / min-width: 1085px/
     }
 
     #collection-bg-container {
-        grid-template-columns: 1fr 1.6fr;
-        grid-template-rows: 0.4fr 1fr;
-        padding-top: 0.6rem;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 0.2fr 1fr;
+        padding-top: 0.5rem;
         padding-bottom: 1rem;
-        margin-left: 1.7rem;
-        margin-right: 1.7rem;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     #collection-title-container {
         grid-column: 1/3;
-        margin-bottom: 0;
-        margin-top: auto;
+        padding-bottom: 0.5rem;
     }
 
     #collection-title {
@@ -702,6 +742,7 @@ Device: tablet / min-width: 1085px/
     #collection-text-container {
         grid-row: 2;
         grid-column: 1/2;
+        max-width: 24rem;
     }
 
     #slash-collection {
@@ -718,7 +759,7 @@ Device: tablet / min-width: 1085px/
         margin-left: auto;
     }
 
-    /* footer */
+    /*------------------------footer------------------------*/
     #footer-bg-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
